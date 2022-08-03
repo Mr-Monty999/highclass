@@ -1,0 +1,672 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+direction: rtl;
+overflow-x: hidden;
+}
+
+:root{
+    --color1:#D374C8;
+    --color2:rgb(0, 243, 252);
+    --color3:#fff;
+    --color4:#eee;
+}
+header{
+    background-color: var(--color1);
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button,input[type="submit"]{
+    text-align: center;
+}
+#logo{
+  width: 150px;
+}
+#logo2{
+    width: 150px;
+
+}
+header p{
+    color:white;
+    padding: 20px;
+    font-size: 40px;
+border-radius: 10px;
+font-weight: bold;
+}
+a,button{
+    text-decoration: none;
+    color:black;
+    padding:20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+}
+nav > a,nav button{
+    transition-duration: 0.5s;
+
+}
+nav a:hover,nav button:hover{
+background-color: var(--color2);
+}
+nav{
+    background-color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    z-index: -1;
+}
+nav .subMenu a{
+    border-bottom:1px solid silver ;
+
+}
+nav .openMenu{
+}
+nav .subMenu{
+    display: grid;
+    position: absolute;
+    transform:translate(-16%,59%);
+    background-color: var(--color4) !important;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    z-index: 3;
+display: none;
+}
+.menuBar{
+    font-size: 40px !important;
+     margin: 10px;
+cursor: pointer;
+}
+main{
+    min-height: 80vh;
+    background-color: var(--color3);
+}
+footer *{
+    direction: ltr !important;
+}
+footer{
+   direction: ltr !important;
+    background-color: var(--color4);
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content:space-between;
+    
+padding: 20px;
+gap:30px;
+}
+footer .title{
+    font-size: 20px;
+}
+footer .text{
+    font-weight: normal;
+}
+footer .helpWith{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+}
+footer .helpWith > div{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+footer .teacher{
+font-size: 20px;
+}
+footer  .names{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-content: center;
+align-items: center;
+align-content: center;
+row-gap:10px;
+-moz-column-gap: 50px;
+     column-gap: 50px;
+margin-top: 10px;
+}
+.welcome{
+     
+}
+.welcome .welcomeMsg{
+    font-weight: bold;
+    font-size: 20px;
+    width: 60%;
+    margin-top: 20px;
+        text-align: center;
+
+}
+.welcome .welcomeMsg2{
+    margin-top: 20px;
+    font-size: px;
+background-color: var(--color1);
+padding: 10px;
+border-radius: 10px;
+color:white;
+text-align: center;
+}
+.welcome img{
+    width: 60vw;
+}
+
+.it img{
+    width: 60vw;
+}
+.it .title{
+    margin: 50px;
+}
+.it > div{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 100px;
+} 
+.it .text{
+    margin-right: 30px;
+}
+
+.customs img{
+width: 60vw;
+}
+.customs .title{
+    margin: 50px;
+}
+.customs > div{
+     display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 100px;
+}
+.customs .text{
+    margin-right: 30px;
+
+}
+video.intro{
+width: 60vw;
+margin-top: 50px;
+margin-bottom: 50px;
+border-radius: 10px;
+}
+
+.form{
+margin-bottom: 100px;
+}
+.form .form-signup{
+margin-top: 50px;
+}
+.form .form-signup > *{
+    margin-top: 10px;
+}
+.form .form-signup > p{
+   border-bottom: 2px  solid black;
+}
+.form .form-signup .input{
+margin-top: 50px;
+gap:10px;
+display: grid;
+/* background-color: red; */
+
+/* width: 70%; */
+/* background-color: red; */
+
+}
+
+.form  .fields {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+justify-content: flex-start;
+align-items: center;
+gap:10px;
+-moz-column-gap: 17%;
+     column-gap: 17%;
+position: relative;
+}
+.form .fields > div{
+display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: flex-start;
+align-items: center;
+gap:10px;
+position: relative;
+width: 100%;
+    /* background-color: red; */
+}
+.form .fields > div p{
+position: absolute;
+left: 103%;
+width: -webkit-fit-content;
+width: -moz-fit-content;
+width: fit-content;
+}
+.form *{
+    overflow: visible;
+}
+.form .register{
+align-self: center;
+margin-top: 20px;
+justify-self: center;
+}
+
+.about *{
+    margin-top: 50px;
+}
+.about{
+    margin-bottom: 100px;
+}
+.about .text{
+    width: 80vw;
+    background-color: var(--color4);
+    padding: 50px;
+    border-radius: 20px;
+    line-height: 30px;
+
+}
+
+.result{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.result img{
+
+    width: 80%;
+
+}
+
+.result .results{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+}
+.result .fa-angle-right{
+    position: absolute;
+    left:95%;
+    top:50%;
+    cursor: pointer;
+            z-index: 3;
+
+}
+.result .fa-angle-left{
+    position: absolute;
+    left:5%;
+    top:50%;
+        cursor: pointer;
+}
+.contact{
+    padding: 50px;
+}
+.contact .location{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .phones{
+    line-height: 40px;
+    align-self: flex-start;
+}
+
+
+.contact .container{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact img{
+    width: 40vw;
+    align-self: center;
+    justify-self: center;
+}
+.achievements{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.materials{
+    padding: 50px;
+}
+.materials > div{
+    margin-bottom: 100px;
+}
+.materials .container{
+display: grid;
+grid-template-columns: repeat(1,auto);
+gap:10px;
+margin-top: 30px;
+}
+.materials select{
+    width: 30vw;
+    padding:10px;
+    outline: none;
+    border: 1px solid silver;
+    background-color: white;
+}
+
+.achievements .title{
+   
+    width: 60vw;
+    margin-bottom: 30px;
+    
+}
+.achievements img{
+    width: 70vw;
+}
+
+.materials option,.materials select{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form .payment{
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+form .payment img{ 
+width: 10vw;
+height: 10vw;
+border-radius: 50%;
+}
+
+
+
+/* My classes */
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+.inputField{
+padding: 5px;
+outline: none;
+font-size: 18px;
+width: 300px;
+border:2px solid rgb(139, 137, 137);
+}
+
+.center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.grid-center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 18px;
+        text-align:justify;
+
+}
+
+.button{
+    width: 100px;
+    outline: none;
+    font-weight: bold;
+cursor: pointer;
+} 
+
+.showNav *{
+    display:block !important;
+    flex-direction: column;
+}
+.showNav .subMenu{
+            position:relative;
+                    transform:translate(0%,0%);
+                 /* left:50px; */
+width: 100%;
+
+}
+.showNav > a,.showNav > button{
+                    border-bottom: 1px solid silver;
+/* width: 80%; */
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.showNav  .openMenu{
+position: relative;
+}
+.showNav{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    height: 100% !important;
+    
+
+}
+.showNav ~ main{
+    display: none;
+}
+
+
+.hideSubMenu{
+   display:none !important;
+}
+
+.centerMenuBar{
+            justify-content: center;
+}
+
+/* Media Quries */
+
+
+@media (min-width:0px) {
+      nav > *:not(#menuBar){
+        display: none;
+    }
+  nav{
+      justify-content: center;
+        align-items: center;
+  }
+   #menuBar{
+              transform:translateX(0px);
+  }
+    footer  .names{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .form  .fields {
+        grid-template-columns: repeat(1,auto);
+    }
+    header p{
+        font-size: 20px;
+    }
+
+    header #logo{
+        display: none;
+    }
+
+    .form .input .fields input:not(input[type="button"]){
+width:60vw !important;
+
+    }
+    .form .input .fields select{
+        width: 60vw;
+    }
+    .form .input{
+        width: 30%;
+    }
+
+    .it >div ,.customs > div{
+        grid-template-columns: repeat(1,auto);
+
+    }
+.it > div img,.customs > div img{
+    align-self: center !important;
+    justify-self: center;
+}
+    .it >div .text,.customs > div .text{
+        width: 70vw;
+        order:2;
+    }
+
+    .materials select{
+                width: 70vw;
+            }
+
+            .form-signup  .title{
+                font-size: initial;
+            }
+}
+
+
+@media (min-width:820px) {
+    nav > *:not(#menuBar){
+        display: none;
+    }
+  nav{
+        justify-content: center;
+        align-items: center;
+  }
+ #menuBar{
+              transform:translateX(0px);
+
+  }
+
+      footer  .names{
+        grid-template-columns: repeat(2,1fr);
+    }
+.form  .fields {
+        grid-template-columns: repeat(2,auto);
+    }
+
+    header p{
+        font-size: 40px;
+    }
+
+    
+  header #logo{
+    display: block;
+}
+
+.form .input .fields input:not(input[type="button"]){
+    width:30vw !important;
+    
+        }
+        .form .input .fields select{
+            width: 30vw;
+        }
+        .form .input{
+            width: 70%;
+        }
+
+        .it >div ,.customs > div{
+            grid-template-columns: repeat(2,auto);
+    
+        }
+    
+        .it >div .text,.customs > div .text{
+            width: initial;
+            order:initial;
+        }
+       
+  .materials select{
+                width: 50vw;
+            }
+            .form-signup  .title{
+                font-size: initial;
+            }
+}
+
+
+@media (min-width:1200px) {
+     nav > *:not(#menuBar){
+        display: flex;
+ 
+    }
+  nav{
+        justify-content: center;
+        align-items: center;
+  }
+ #menuBar{
+              transform:translateX(0px);
+              display: none;
+  }
+
+       footer  .names{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .form  .fields {
+        grid-template-columns: repeat(2,auto);
+    }
+
+    header p{
+        font-size: 40px;
+    }
+
+    header #logo{
+        display: block;
+    }
+
+    .form .input .fields input:not(input[type="button"]){
+        width:30vw !important;
+        
+            }
+            .form .input .fields select{
+                width: 30vw;
+            }
+            .form .input{
+                width: 70%;
+            }
+
+            .it >div ,.customs > div .text{
+                grid-template-columns: repeat(2,auto);
+        
+            }
+        
+            .it >div .text,.customs > div .text{
+                width: initial;
+                order:initial;
+            }
+
+            .materials select{
+                width: 30vw;
+            }
+
+            .form-signup  .title{
+                font-size: initial;
+            }
+}
